@@ -107,7 +107,7 @@ apt-non-interactive() {
     apt-get                                \
       -o Dpkg::Options::='--force-confdef' \
       -o Dpkg::Options::='--force-confold' \
-      -f -y -qq                            \
+      -y                                   \
       --no-install-recommends              \
       "$@"
 }
